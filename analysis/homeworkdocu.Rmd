@@ -22,8 +22,12 @@ to give some description in detail
 
 ```{r generaldescription}
 summary(biostatsdata)
+v1 <- biostatsdata[[4]]
+v2 <- biostatsdata[[5]]
+summary(v1)
+summary(v2)
 ```
-This is General descriptive statistic for the dataset. We can see the Mean of the height is 69.06 inch while the mean of the weight is 146.7lbs. This is a survey for the group of people aged between 23 years old and 53 years old.
+Firstly, a general descriptive statistic for the dataset is presented.Then, there are two pieces of specific summary for the 'weight' column as well as 'Height' column.We can see the Mean of the height is 69.06 inch while the mean of the weight is 146.7lbs. Generally, this is a survey for the group of people aged between 23 years old and 53 years old.
 
 Now we try to make a plot to show the relationship between Height and Weight generally
 ```{r plot}
