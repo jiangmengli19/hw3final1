@@ -406,7 +406,7 @@ div.section {
 <div class="tab-content">
 <div id="summary" class="tab-pane fade in active">
 <p>
-<strong>Last updated:</strong> 2019-10-18
+<strong>Last updated:</strong> 2019-10-20
 </p>
 <p>
 <strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 7 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 0
@@ -497,10 +497,10 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomjiangmengli19hw3final1tree62b388945847f54be55399cfd37a591c33aa2585targetblank62b3889a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/jiangmengli19/hw3final1/tree/62b388945847f54be55399cfd37a591c33aa2585" target="_blank">62b3889</a> </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomjiangmengli19hw3final1tree73aa7d9985fccf7e90439024f1748a53dc49620ctargetblank73aa7d9a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/jiangmengli19/hw3final1/tree/73aa7d9985fccf7e90439024f1748a53dc49620c" target="_blank">73aa7d9</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrongahrefhttpsgithubcomjiangmengli19hw3final1tree62b388945847f54be55399cfd37a591c33aa2585targetblank62b3889a" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcomjiangmengli19hw3final1tree73aa7d9985fccf7e90439024f1748a53dc49620ctargetblank73aa7d9a" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility. The version displayed above was the version of the Git repository at the time these results were generated. <br><br> Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
@@ -546,6 +546,40 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/jiangmengli19/hw3final1/blob/73aa7d9985fccf7e90439024f1748a53dc49620c/analysis/homeworkdocu.Rmd" target="_blank">73aa7d9</a>
+</td>
+<td>
+jiangmengli19
+</td>
+<td>
+2019-10-20
+</td>
+<td>
+add the specific summary for two columns and the analysis is complete
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/jiangmengli19/hw3final1/ccf38da4f497ba20ba35ce2f3c08de815e1585ef/docs/homeworkdocu.html" target="_blank">ccf38da</a>
+</td>
+<td>
+jiangmengli19
+</td>
+<td>
+2019-10-19
+</td>
+<td>
+Build site.
+</td>
+</tr>
 <tr>
 <td>
 html
@@ -647,7 +681,15 @@ View(biostatsdata)</code></pre>
  3rd Qu.:165.2  
  Max.   :176.0  
                 </code></pre>
-<p>This is General descriptive statistic for the dataset. We can see the Mean of the height is 69.06 inch while the mean of the weight is 146.7lbs. This is a survey for the group of people aged between 23 years old and 53 years old.</p>
+<pre class="r"><code>v1 &lt;- biostatsdata[[4]]
+v2 &lt;- biostatsdata[[5]]
+summary(v1)</code></pre>
+<pre><code>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  62.00   66.25   69.50   69.06   71.75   75.00 </code></pre>
+<pre class="r"><code>summary(v2)</code></pre>
+<pre><code>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   98.0   132.0   150.0   146.7   165.2   176.0 </code></pre>
+<p>Firstly, a general descriptive statistic for the dataset is presented.Then, there are two pieces of specific summary for the ‘weight’ column as well as ‘Height’ column.We can see the Mean of the height is 69.06 inch while the mean of the weight is 146.7lbs. Generally, this is a survey for the group of people aged between 23 years old and 53 years old.</p>
 <p>Now we try to make a plot to show the relationship between Height and Weight generally</p>
 <pre class="r"><code>plot(biostatsdata$Height..in.,biostatsdata$Weight..lbs.,xlab = &quot;Height&quot;,ylab = &quot;Weight&quot;)</code></pre>
 <p><img src="figure/homeworkdocu.Rmd/plot-1.png" width="672" style="display: block; margin: auto;" /></p>
