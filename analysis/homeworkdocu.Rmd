@@ -48,4 +48,4 @@ plot(fit)
 ```
 
 Finally we do some analysis for our model. It can be seen generally the model fits. We
-can check the mean of residuals , it is `r mean(y)`. It is small. Apart from that, we can also see the median of residuals, it is `r median(y)`.It is also small. The result shows that weight may be related with age and height to some extent. 
+can check the mean of residuals , it is `r mean(y)`. It is small. Apart from that, we can also see the median of residuals, it is `r median(y)`.It is also small. The result shows that weight may be related with age and height to some extent. This is the analysis for linear regression part. 
